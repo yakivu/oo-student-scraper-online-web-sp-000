@@ -34,7 +34,7 @@ describe "Scraper" do
 
   describe "#scrape_profile_page" do
     it "is a class method that scrapes a student's profile page and returns a hash of attributes describing an individual student" do
-      profile_url = "https://learn-co-curriculum.github.io/student-scraper-test-page/students/ross.html"
+      profile_url = "https://learn-co-curriculum.github.io/student-scraper-test-page/students/Ross.html"
       scraped_student = Scraper.scrape_profile_page(profile_url)
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_joe_hash)
